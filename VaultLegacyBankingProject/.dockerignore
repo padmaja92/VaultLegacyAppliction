@@ -1,0 +1,12 @@
+.git
+.gitignore
+.env
+*.md
+target/
+!target/vault-legacy-banking-1.0-SNAPSHOT.jar
+.settings/
+.classpath
+.project
+.idea/
+*.iml
+.vscode/

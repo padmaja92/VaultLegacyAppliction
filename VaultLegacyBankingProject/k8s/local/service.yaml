@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: vault-legacy-app
+  labels:
+    app: vault-legacy-app
+spec:
+  type: NodePort  # Using NodePort for local development
+  ports:
+    - port: 8080
+      targetPort: 8080
+      nodePort: 30080  # Fixed port for local access
+  selector:
+    app: vault-legacy-app
+    env: local
